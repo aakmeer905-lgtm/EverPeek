@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever Peak | FAQs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="logo imag.jpeg" alt="Ever Peak Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./History.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Type.html">Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Techniques.html">Techniques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Record.html">Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Giudeline.html">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./FAQ.html">FAQs</a>
+                    </li>
+                </ul>
+
+                <div class="visitor-box">
+                    <i class="bi bi-people-fill"></i>
+                    Visitors:
+                    <span id="visitorCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+            Find answers to common questions about mountaineering,
+            climbing techniques, equipment, safety, mountain records
+            and the world of Ever Peak.
+        </p>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <h2 class="section-title">How Can We Help You?</h2>
+
+        <p class="section-description">
+            Explore the questions below to learn more about mountaineering.
+        </p>
+
+        <div class="search-box">
+            <input type="text" id="faqSearch" placeholder="Search your question..."
+                aria-label="Search frequently asked questions">
+        </div>
+
+        <div id="faqContainer">
+
+            <!-- ABOUT -->
+            <h3 class="faq-category">About Mountaineering</h3>
+            <div class="accordion faq-group" id="aboutFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#about1">
+                            What is mountaineering?
+                        </button>
+                    </h2>
+                    <div id="about1" class="accordion-collapse collapse" data-bs-parent="#aboutFAQs">
+                        <div class="accordion-body">
+                            Mountaineering is the activity of climbing mountains.
+                            It may involve hiking, rock climbing, snow climbing,
+                            ice climbing and travelling across challenging terrain.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#about2">
+                            Why do people climb mountains?
+                        </button>
+                    </h2>
+                    <div id="about2" class="accordion-collapse collapse" data-bs-parent="#aboutFAQs">
+                        <div class="accordion-body">
+                            People climb mountains for adventure, personal
+                            achievement, exploration, sport, scientific research
+                            and the experience of nature.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#about3">
+                            Is mountaineering suitable for beginners?
+                        </button>
+                    </h2>
+                    <div id="about3" class="accordion-collapse collapse" data-bs-parent="#aboutFAQs">
+                        <div class="accordion-body">
+                            Yes. Beginners can start with easy hikes and guided
+                            mountain trips. They should gradually develop fitness,
+                            navigation skills and climbing knowledge before
+                            attempting difficult routes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HISTORY -->
+            <h3 class="faq-category">History of Mountaineering</h3>
+            <div class="accordion faq-group" id="historyFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#history1">
+                            When did modern mountaineering develop?
+                        </button>
+                    </h2>
+                    <div id="history1" class="accordion-collapse collapse" data-bs-parent="#historyFAQs">
+                        <div class="accordion-body">
+                            Modern recreational mountaineering developed
+                            particularly in Europe during the eighteenth
+                            and nineteenth centuries, although people had
+                            travelled through and climbed mountains long before.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#history2">
+                            Why is the history of mountaineering important?
+                        </button>
+                    </h2>
+                    <div id="history2" class="accordion-collapse collapse" data-bs-parent="#historyFAQs">
+                        <div class="accordion-body">
+                            Its history helps us understand how climbing
+                            equipment, route planning, safety practices
+                            and mountain exploration have evolved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TYPES -->
+            <h3 class="faq-category">Types of Mountaineering</h3>
+            <div class="accordion faq-group" id="typesFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#types1">
+                            What are the main types of mountaineering?
+                        </button>
+                    </h2>
+                    <div id="types1" class="accordion-collapse collapse" data-bs-parent="#typesFAQs">
+                        <div class="accordion-body">
+                            Common types include hiking and trekking,
+                            rock climbing, alpine climbing, snow and ice
+                            climbing, and expedition mountaineering.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#types2">
+                            What is alpine climbing?
+                        </button>
+                    </h2>
+                    <div id="types2" class="accordion-collapse collapse" data-bs-parent="#typesFAQs">
+                        <div class="accordion-body">
+                            Alpine climbing involves travelling and climbing
+                            in mountainous environments, often combining
+                            rock, snow and ice. It requires suitable skills,
+                            equipment and careful planning.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#types3">
+                            What is expedition mountaineering?
+                        </button>
+                    </h2>
+                    <div id="types3" class="accordion-collapse collapse" data-bs-parent="#typesFAQs">
+                        <div class="accordion-body">
+                            Expedition mountaineering involves longer,
+                            carefully organised trips to climb mountains.
+                            Expeditions may require camps, supplies,
+                            trained guides and additional equipment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TECHNIQUES -->
+            <h3 class="faq-category">Climbing Techniques</h3>
+            <div class="accordion faq-group" id="techniquesFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#techniques1">
+                            What skills are needed for mountaineering?
+                        </button>
+                    </h2>
+                    <div id="techniques1" class="accordion-collapse collapse" data-bs-parent="#techniquesFAQs">
+                        <div class="accordion-body">
+                            Important skills include balance, navigation,
+                            route planning, weather awareness, safe movement
+                            on rock and snow, and appropriate use of equipment.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#techniques2">
+                            Why is rope technique important?
+                        </button>
+                    </h2>
+                    <div id="techniques2" class="accordion-collapse collapse" data-bs-parent="#techniquesFAQs">
+                        <div class="accordion-body">
+                            Rope systems can help protect climbers on suitable
+                            routes when used correctly. Climbers should learn
+                            knots, belaying and rope safety from a qualified
+                            instructor before relying on them outdoors.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EQUIPMENT -->
+            <h3 class="faq-category">Climbing Equipment</h3>
+            <div class="accordion faq-group" id="equipmentFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#equipment1">
+                            What equipment does a mountaineer need?
+                        </button>
+                    </h2>
+                    <div id="equipment1" class="accordion-collapse collapse" data-bs-parent="#equipmentFAQs">
+                        <div class="accordion-body">
+                            Equipment depends on the route and conditions.
+                            It may include suitable boots, layered clothing,
+                            a helmet, harness, rope, navigation tools,
+                            food, water, first-aid supplies and a backpack.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#equipment2">
+                            Why is a climbing helmet important?
+                        </button>
+                    </h2>
+                    <div id="equipment2" class="accordion-collapse collapse" data-bs-parent="#equipmentFAQs">
+                        <div class="accordion-body">
+                            A suitable climbing helmet helps protect the head
+                            from impacts and falling debris. It must fit
+                            correctly and be used according to its instructions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SAFETY -->
+            <h3 class="faq-category">Safety Guidelines</h3>
+            <div class="accordion faq-group" id="safetyFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#safety1">
+                            How can climbers stay safe in the mountains?
+                        </button>
+                    </h2>
+                    <div id="safety1" class="accordion-collapse collapse" data-bs-parent="#safetyFAQs">
+                        <div class="accordion-body">
+                            Check weather and route conditions, carry suitable
+                            equipment, travel with an appropriate team, tell
+                            someone your plan and turn back when conditions
+                            become unsafe.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#safety2">
+                            What should climbers do if weather gets dangerous?
+                        </button>
+                    </h2>
+                    <div id="safety2" class="accordion-collapse collapse" data-bs-parent="#safetyFAQs">
+                        <div class="accordion-body">
+                            Follow the team's emergency plan, seek an appropriate
+                            safe location when possible, avoid exposed terrain
+                            during storms and contact local rescue services
+                            if emergency assistance is required.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECORDS -->
+            <h3 class="faq-category">Mountain Records</h3>
+            <div class="accordion faq-group" id="recordsFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#records1">
+                            Which is the highest mountain in the world?
+                        </button>
+                    </h2>
+                    <div id="records1" class="accordion-collapse collapse" data-bs-parent="#recordsFAQs">
+                        <div class="accordion-body">
+                            Mount Everest is the highest mountain above sea level,
+                            reaching approximately 8,849 metres.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#records2">
+                            Why are mountain climbing records significant?
+                        </button>
+                    </h2>
+                    <div id="records2" class="accordion-collapse collapse" data-bs-parent="#recordsFAQs">
+                        <div class="accordion-body">
+                            Records document notable achievements, routes,
+                            expeditions and milestones in mountaineering.
+                            They should be checked against reliable sources
+                            because records can change over time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOCATIONS -->
+            <h3 class="faq-category">Mountains and Locations</h3>
+            <div class="accordion faq-group" id="locationsFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#locations1">
+                            Which mountains are famous in Pakistan?
+                        </button>
+                    </h2>
+                    <div id="locations1" class="accordion-collapse collapse" data-bs-parent="#locationsFAQs">
+                        <div class="accordion-body">
+                            Famous mountains in Pakistan include K2,
+                            Nanga Parbat, Broad Peak and Gasherbrum I.
+                            Many are located in the Karakoram or Himalayan
+                            mountain regions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#locations2">
+                            What is the best season for climbing?
+                        </button>
+                    </h2>
+                    <div id="locations2" class="accordion-collapse collapse" data-bs-parent="#locationsFAQs">
+                        <div class="accordion-body">
+                            The best season depends on the mountain, route,
+                            altitude and weather. Always check local conditions
+                            and seek advice from experienced local guides.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORGANIZATIONS -->
+            <h3 class="faq-category">Mountaineering Organizations</h3>
+            <div class="accordion faq-group" id="organizationsFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#organizations1">
+                            Why are mountaineering organizations important?
+                        </button>
+                    </h2>
+                    <div id="organizations1" class="accordion-collapse collapse" data-bs-parent="#organizationsFAQs">
+                        <div class="accordion-body">
+                            Organizations may provide training, climbing
+                            information, route guidance, environmental education
+                            and support for responsible mountain activities.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALLERY AND MEDIA -->
+            <h3 class="faq-category">Gallery, Videos and Stories</h3>
+            <div class="accordion faq-group" id="mediaFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#media1">
+                            What can I find in the Ever Peak gallery?
+                        </button>
+                    </h2>
+                    <div id="media1" class="accordion-collapse collapse" data-bs-parent="#mediaFAQs">
+                        <div class="accordion-body">
+                            A mountaineering gallery can showcase mountain
+                            landscapes, climbing equipment, expeditions,
+                            trails and outdoor adventures.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#media2">
+                            Why read mountaineering stories?
+                        </button>
+                    </h2>
+                    <div id="media2" class="accordion-collapse collapse" data-bs-parent="#mediaFAQs">
+                        <div class="accordion-body">
+                            Stories can share climbers' experiences, challenges,
+                            achievements and lessons learned during expeditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <h3 class="faq-category">Contact and Website</h3>
+            <div class="accordion faq-group" id="contactFAQs">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contact1">
+                            How can I contact Ever Peak?
+                        </button>
+                    </h2>
+                    <div id="contact1" class="accordion-collapse collapse" data-bs-parent="#contactFAQs">
+                        <div class="accordion-body">
+                            Visit the Contact page on the Ever Peak website
+                            to find the contact details provided by the website
+                            owner.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contact2">
+                            How do I navigate the Ever Peak website?
+                        </button>
+                    </h2>
+                    <div id="contact2" class="accordion-collapse collapse" data-bs-parent="#contactFAQs">
+                        <div class="accordion-body">
+                            Use the navigation bar to explore the Home,
+                            About, History, Types, Techniques, Records,
+                            Gallery, Guidelines, Contact and FAQs pages.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="no-results" id="noResults">
+            No matching questions found. Try another search.
+        </div>
+
+        <div class="help-card">
+            <i class="bi bi-envelope-paper-heart"></i>
+            <div class="flex-grow-1">
+                <h3>Still have a question?</h3>
+                <p>Send us your question or suggestion through the Contact page.</p>
+            </div>
+            <a href="./Contact.html">Contact Us <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between"> 
+                
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3><i class="fa-solid fa-mountain me-2"></i>Ever Peak</h3>
+                    <p class="mt-2 mb-0">
+                        An educational portal dedicated to mountaineering,
+                        climbing history, records, techniques and mountain safety.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="./index.html">Home</a>
+                    <a href="./Giudeline.html">Guidelines</a>
+                    <a href="./Contact.html">Contact</a>
+                    <a href="./FAQ.html">FAQs</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 404 Ever Peak</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (0001) 234-5678</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@EverPeak.com</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons mt-2">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="col-12">
+                    <div class="copyright">
+                        © <span id="currentYear">2026</span> Ever Peak. All Rights Reserved.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Contact.js"></script>
+    <script src="FAQ.js"></script>
+</body>
+
+</html>

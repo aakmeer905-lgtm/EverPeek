@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever Peak | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="logo imag.jpeg" alt="Ever Peak Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./History.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Type.html">Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Techniques.html">Techniques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Record.html">Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Giudeline.html">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQs</a>
+                    </li>
+                </ul>
+
+                <div class="visitor-box">
+                    <i class="bi bi-people-fill"></i>
+                    Visitors:
+                    <span id="visitorCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">
+                    <i class="bi bi-chat-dots"></i>
+                    GET IN TOUCH
+                </span>
+                <h1>
+                    Contact <span>Ever Peak</span>
+                </h1>
+                <p>
+                    Have a question about mountaineering, mountain safety,
+                    climbing techniques or outdoor equipment? Send us a
+                    message. We would love to hear from you.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= CONTACT INFORMATION ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">We Are Here to Help</span>
+                <h2>Let's Connect</h2>
+                <p>
+                    Contact us with your questions, suggestions or feedback
+                    about the Ever Peak mountaineering website.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>
+                            Send your questions or suggestions through our
+                            contact form.
+                        </p>
+                        <a href="#contact-form">Send a Message</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-chat-square-text"></i>
+                        </div>
+                        <h3>General Enquiries</h3>
+                        <p>
+                            Ask about the website, mountaineering topics,
+                            educational content or equipment information.
+                        </p>
+                        <a href="#contact-form">Ask Your Question</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h3>Suggestions & Feedback</h3>
+                        <p>
+                            Share ideas that could help improve our website
+                            and its mountain-related content.
+                        </p>
+                        <a href="#contact-form">Share Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAIN CONTACT SECTION ================= -->
+    <section class="section section-white" id="contact-form">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">Contact Form</span>
+                <h2>Send Us a Message</h2>
+                <p>
+                    Complete the form below and provide a few details so
+                    your enquiry can be understood clearly.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- CONTACT FORM -->
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h3>Write to Us</h3>
+                        <p class="form-description">
+                            Fields marked with * are required.
+                        </p>
+
+                        <!-- Added needs-validation and novalidate for Bootstrap/Custom validation -->
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">
+                                        Full Name *
+                                    </label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName"
+                                        placeholder="Enter your full name" autocomplete="name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your full name.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">
+                                        Email Address *
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email" autocomplete="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">
+                                        Phone Number
+                                    </label>
+                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                        placeholder="Enter your phone number" autocomplete="tel">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">
+                                        Subject *
+                                    </label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="" selected disabled>
+                                            Select a subject
+                                        </option>
+                                        <option value="General Enquiry">General Enquiry</option>
+                                        <option value="Mountaineering">Mountaineering</option>
+                                        <option value="Safety Guidelines">Safety Guidelines</option>
+                                        <option value="Gadgets and Equipment">Gadgets and Equipment</option>
+                                        <option value="Website Feedback">Website Feedback</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">
+                                        Your Message *
+                                    </label>
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Write your message here..." minlength="10" maxlength="2000"
+                                        required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter a message with at least 10 characters.
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <small class="text-secondary">
+                                            Please explain your enquiry clearly.
+                                        </small>
+                                        <small class="text-secondary">
+                                            <span id="messageCount">0</span>/2000
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="yes" id="agree" required>
+                                        <label class="form-check-label small text-secondary" for="agree">
+                                            I confirm that the information I have provided is correct.
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="submit-btn">
+                                        <i class="bi bi-send me-2"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p class="form-note">
+                                Demo form: a backend or form service is required
+                                to deliver messages to an email inbox.
+                            </p>
+
+                            <div id="formFeedback" class="alert mt-3 d-none" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- CONTACT SIDE PANEL -->
+                <div class="col-lg-5">
+                    <div class="contact-side-panel">
+                        <h3>Get in Touch</h3>
+                        <p>
+                            We welcome questions, suggestions and feedback
+                            from people who are interested in mountains,
+                            climbing and outdoor adventures.
+                        </p>
+
+                        <div class="side-detail">
+                            <i class="bi bi-envelope-paper"></i>
+                            <div>
+                                <h4>Contact Form</h4>
+                                <p>Use the form on this page to write your enquiry.</p>
+                            </div>
+                        </div>
+
+                        <div class="side-detail">
+                            <i class="bi bi-compass"></i>
+                            <div>
+                                <h4>Mountaineering Topics</h4>
+                                <p>Ask about mountain equipment, navigation, climbing preparation and general safety.</p>
+                            </div>
+                        </div>
+
+                        <div class="side-detail">
+                            <i class="bi bi-chat-heart"></i>
+                            <div>
+                                <h4>Feedback & Suggestions</h4>
+                                <p>Your ideas can help us improve the website and its educational content.</p>
+                            </div>
+                        </div>
+
+                        <div class="side-detail">
+                            <i class="bi bi-shield-check"></i>
+                            <div>
+                                <h4>Safety Reminder</h4>
+                                <p>This website is not an emergency rescue service. For an emergency, contact local authorities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY CONTACT US ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">How We Can Help</span>
+                <h2>What Can You Contact Us About?</h2>
+                <p>
+                    Choose the topic that best matches your question
+                    when completing the contact form.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <i class="bi bi-house"></i>
+                        <h3>Mountain Information</h3>
+                        <p>
+                            General questions about mountain environments,
+                            mountaineering history and different types of climbing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <i class="bi bi-backpack"></i>
+                        <h3>Gadgets & Equipment</h3>
+                        <p>
+                            Questions about traditional mountaineering tools,
+                            navigation devices, clothing and outdoor gear.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Safety Guidelines</h3>
+                        <p>
+                            General educational questions about trip planning,
+                            preparation, equipment checks and mountain safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between"> 
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3><i class="fa-solid fa-mountain me-2"></i>Ever Peak</h3>
+                    <p class="mt-2 mb-0">
+                        An educational portal dedicated to mountaineering,
+                        climbing history, records, techniques and mountain safety.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="./index.html">Home</a>
+                    <a href="./Giudeline.html">Guidelines</a>
+                    <a href="./Contact.html">Contact</a>
+                    <a href="./FAQ.html">FAQs</a>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 404 Ever Peak</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (0001) 234-5678</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@EverPeak.com</p>
+                </div>
+                <!-- Social Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons mt-2">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="col-12">
+                    <div class="copyright">
+                        © <span id="currentYear">2026</span> Ever Peak. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Contact.js"></script>
+</body>
+
+</html>

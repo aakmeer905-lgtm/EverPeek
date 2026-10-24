@@ -1,0 +1,767 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+  }
+
+  body {
+      font-family: "Montserrat", sans-serif;
+      color: #263238;
+      background: #f6f8f7;
+      line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+      font-family: "Playfair Display", serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  section {
+      padding: 90px 0;
+      scroll-margin-top: 75px;
+  }
+
+  .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+  }
+
+  .section-title span {
+      color: #e0a52b;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+
+  .section-title h2 {
+      font-size: 42px;
+      margin-top: 8px;
+      color: #123d32;
+  }
+
+  .section-title p {
+      max-width: 700px;
+      margin: 15px auto 0;
+      color: #697674;
+  }
+
+
+  /* =========================
+           NAVBAR
+        ========================= */
+
+  .navbar {
+      background: rgba(8, 37, 31, 0.97);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar-brand {
+      color: white !important;
+      font-weight: 800;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 10px !important;
+      margin-right: 50px !important;
+      padding-right: 0;
+
+  }
+
+  .navbar-nav .nav-link {
+      color: #dce9e5 !important;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 0 4px;
+      padding: 8px 10px !important;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+      color: #123d32 !important;
+      background: #e0a52b;
+  }
+
+  .visitor-box {
+      color: white;
+      font-size: 12px;
+      margin-left: 15px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      white-space: nowrap;
+  }
+
+  .visitor-box i {
+      color: #e0a52b;
+  }
+
+  /* Logo */
+  .logo-img {
+      width: 90px;
+      height: 90px;
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+
+      /* Glow */
+      border: 1px solid black;
+      ;
+      box-shadow:
+          0 0 5px rgb(233, 227, 227);
+
+      transition: all 0.3s ease;
+  }
+
+  /* Hover Effect */
+  .logo-img:hover {
+      box-shadow:
+          0 0 8px rgb(248, 244, 244),
+      ;
+
+      transform: scale(1.05);
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 576px) {
+      .logo-img {
+          width: 60px;
+          height: 60px;
+      }
+  }
+
+  /* =========================
+           PAGE HERO
+        ========================= */
+
+  .types-hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+          linear-gradient(90deg,
+              rgba(4, 28, 23, 0.94),
+              rgba(4, 28, 23, 0.65),
+              rgba(4, 28, 23, 0.28)),
+          url("background\ imag.jpeg") center/cover;
+  }
+
+ .types-hero-content {
+    color: white;
+    max-width: 850px;
+}
+
+.types-hero-content span {
+    color: #e0a52b;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.types-hero-content h1 span {
+    color: #e0a52b;
+    letter-spacing: normal; 
+    text-transform: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.types-hero-content h1 {
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 1.05;
+    margin: 18px 0;
+}
+
+.types-hero-content p {
+    font-size: 18px;
+    color: #e8eeee;
+    max-width: 700px;
+}
+
+
+  /* =========================
+           INTRO
+        ========================= */
+
+  .intro-image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .intro-text h3 {
+      color: #123d32;
+      font-size: 35px;
+      margin-bottom: 18px;
+  }
+
+  .info-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+  }
+
+  .info-list li {
+      margin-bottom: 12px;
+  }
+
+  .info-list i {
+      color: #e0a52b;
+      margin-right: 8px;
+  }
+
+
+  /* =========================
+           MOUNTAIN TYPE CARDS
+        ========================= */
+
+  .mountain-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: 0.4s;
+      border: 1px solid #e6ece9;
+  }
+
+  .mountain-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  }
+
+  .mountain-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+  }
+
+  .mountain-card-content {
+      padding: 25px;
+  }
+
+  .mountain-card-content h3 {
+      color: #123d32;
+      font-size: 25px;
+      margin-bottom: 10px;
+  }
+
+  .mountain-card-content p {
+      color: #697674;
+      font-size: 14px;
+  }
+
+  .mountain-tag {
+      display: inline-block;
+      background: #e0a52b;
+      color: #123d32;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 12px;
+  }
+
+
+  /* =========================
+           DARK SECTION
+        ========================= */
+
+  .dark-section {
+      background: #0c3028;
+      color: white;
+  }
+
+  .dark-section .section-title h2 {
+      color: white;
+  }
+
+  .dark-section .section-title p {
+      color: #b9cbc6;
+  }
+
+
+  /* =========================
+           CLIMBING TYPES
+        ========================= */
+
+  .climbing-card {
+      height: 100%;
+      padding: 30px;
+      border-radius: 15px;
+      background: #16473b;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: 0.4s;
+  }
+
+  .climbing-card:hover {
+      transform: translateY(-8px);
+      background: #195243;
+  }
+
+  .climbing-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #e0a52b;
+      color: #123d32;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+  }
+
+  .climbing-card h3 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+  }
+
+  .climbing-card p {
+      color: #c7d7d3;
+      font-size: 14px;
+  }
+
+
+  /* =========================
+           EQUIPMENT
+        ========================= */
+
+  .equipment-card {
+      background: white;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      border: 1px solid #e7ecea;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+      transition: 0.4s;
+  }
+
+  .equipment-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+
+  .equipment-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #123d32;
+      color: #e0a52b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      margin-bottom: 18px;
+  }
+
+  .equipment-card h3 {
+      color: #123d32;
+      font-size: 23px;
+      margin-bottom: 10px;
+  }
+
+  .equipment-card p {
+      color: #697674;
+      font-size: 14px;
+  }
+
+
+  /* =========================
+           EQUIPMENT LIST
+        ========================= */
+
+  .equipment-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+  }
+
+  .equipment-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #edf1ef;
+      font-size: 13px;
+  }
+
+  .equipment-list li:last-child {
+      border-bottom: none;
+  }
+
+  .equipment-list i {
+      color: #e0a52b;
+      margin-right: 7px;
+  }
+
+
+  /* =========================
+           ALTITUDE TYPES
+        ========================= */
+
+  .altitude-box {
+      background:
+          linear-gradient(rgba(8, 37, 31, 0.90), rgba(8, 37, 31, 0.90)),
+          url("background\ imag.jpeg") center/cover;
+
+      color: white;
+      border-radius: 18px;
+      padding: 45px;
+  }
+
+  .altitude-item {
+      padding: 20px;
+      border-left: 3px solid #e0a52b;
+      margin-bottom: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 0 10px 10px 0;
+  }
+
+  .altitude-item h3 {
+      color: #e0a52b;
+      font-size: 23px;
+  }
+
+  .altitude-item p {
+      color: #d3e0dd;
+      margin: 5px 0 0;
+  }
+
+
+  /* =========================
+           CLIMBING ENVIRONMENTS
+        ========================= */
+
+  .environment-card {
+      position: relative;
+      height: 280px;
+      border-radius: 15px;
+      overflow: hidden;
+  }
+
+  .environment-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+  }
+
+  .environment-card:hover img {
+      transform: scale(1.08);
+  }
+
+  .environment-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 25px;
+
+      background:
+          linear-gradient(transparent,
+              rgba(0, 0, 0, 0.88));
+
+      color: white;
+  }
+
+  .environment-overlay h3 {
+      font-size: 25px;
+      margin-bottom: 5px;
+  }
+
+  .environment-overlay p {
+      font-size: 13px;
+      margin: 0;
+      color: #e5eeee;
+  }
+
+
+  /* =========================
+           DIFFICULTY
+        ========================= */
+
+  .difficulty-card {
+      text-align: center;
+      padding: 35px 25px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+      height: 100%;
+  }
+
+  .difficulty-number {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: #e0a52b;
+      color: #123d32;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 22px;
+      font-weight: 800;
+  }
+
+  .difficulty-card h3 {
+      color: #123d32;
+      font-size: 23px;
+  }
+
+  .difficulty-card p {
+      color: #697674;
+      font-size: 14px;
+  }
+
+
+  /* =========================
+           SAFETY
+        ========================= */
+
+  .safety-section {
+      background: #f0f5f3;
+  }
+
+  .safety-card {
+      display: flex;
+      gap: 18px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      height: 100%;
+      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+  }
+
+  .safety-icon {
+      min-width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #123d32;
+      color: #e0a52b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+  }
+
+  .safety-card h3 {
+      color: #123d32;
+      font-size: 20px;
+  }
+
+  .safety-card p {
+      color: #697674;
+      font-size: 13px;
+      margin: 5px 0 0;
+  }
+
+
+
+
+  /* =========================
+           FOOTER
+        ========================= */
+footer {
+    background: #061c17;
+    color: #b5c5c1;
+    padding: 30px 0 15px;
+}
+
+footer h3, footer h4, footer h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Ever Peak Icon Color */
+footer h3 i {
+    color: #e0a52b;
+}
+
+footer a {
+    color: #b5c5c1;
+    display: block;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e0a52b;
+    padding-left: 5px;
+}
+
+/* Footer Columns Alignment */
+.footer-col {
+    color: #b5c5c1;
+}
+
+.footer-col h4, .footer-col h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer-col p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Contact Info Icons */
+.footer-col p i {
+    color: #e0a52b;
+    width: 20px;
+    text-align: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    background: rgba(255, 255, 255, 0.1);
+    color:whitesmoke;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #e0a52b;
+    color: #061c17;
+    padding-left: 0;
+}
+
+/* Copyright Section */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 25px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+  /* =========================
+           BACK TOP
+        ========================= */
+
+  #backTop {
+      position: fixed;
+      right: 20px;
+      bottom: 55px;
+      width: 45px;
+      height: 45px;
+      border: 0;
+      border-radius: 50%;
+      background: #e0a52b;
+      color: #123d32;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9998;
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+
+  /* =========================
+           MOBILE
+        ========================= */
+
+  @media (max-width: 991px) {
+
+      .navbar-collapse {
+          background: #08251f;
+          padding: 15px;
+          border-radius: 8px;
+          margin-top: 10px;
+      }
+
+      .navbar-nav {
+          align-items: stretch;
+      }
+
+      .navbar-nav .nav-link {
+          margin: 3px 0;
+      }
+
+      .visitor-box {
+          margin-left: 8px;
+          margin-top: 8px;
+          font-size: 14px;
+          padding: 9px 14px;
+      }
+
+      .navbar-collapse .login-btn {
+          margin-left: 8px;
+          margin-top: 10px;
+      }
+
+      .altitude-box {
+          padding: 30px 20px;
+      }
+  }
+
+
+  @media (max-width: 575px) {
+
+      section {
+          padding: 65px 0;
+      }
+
+      .section-title h2 {
+          font-size: 32px;
+      }
+
+      .types-hero-content h1 {
+          font-size: 50px;
+      }
+
+      .intro-image {
+          height: 330px;
+          margin-bottom: 30px;
+      }
+
+      .ever-peak-logo {
+          width: 80px;
+          height: 80px;
+      }
+
+
+      .ticker-label {
+          padding: 7px 10px;
+      }
+  }

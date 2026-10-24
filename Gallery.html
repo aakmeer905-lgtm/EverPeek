@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever Peak | Mountaineering Gadgets & Equipment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="logo imag.jpeg" alt="Ever Peak Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./History.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Type.html">Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Techniques.html">Techniques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Record.html">Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Giudeline.html">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQs</a>
+                    </li>
+                </ul>
+
+                <div class="visitor-box">
+                    <i class="bi bi-people-fill"></i>
+                    Visitors:
+                    <span id="visitorCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="gadgets-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label">Ever Peak Equipment Guide</span>
+
+                <h1>
+                    From Ancient Tools to
+                    <span>Modern Mountain Gadgets</span>
+                </h1>
+
+                <p>
+                    Discover the equipment climbers have used throughout history,
+                    from wooden walking staffs and traditional ice axes to GPS
+                    navigation, satellite messengers, avalanche safety technology
+                    and modern climbing equipment.
+                </p>
+
+                <a href="#gadgets" class="hero-btn">
+                    Explore All Gadgets
+                    <i class="bi bi-arrow-down-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <div class="container stats-section">
+        <div class="row g-3">
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-clock-history"></i>
+                    <h3>Ancient</h3>
+                    <p>HISTORICAL TOOLS</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-compass-fill"></i>
+                    <h3>Classic</h3>
+                    <p>TRADITIONAL EQUIPMENT</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-cpu-fill"></i>
+                    <h3>Modern</h3>
+                    <p>DIGITAL GADGETS</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Safety</h3>
+                    <p>MOUNTAIN SAFETY GEAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GADGET COLLECTION -->
+    <section class="section-space" id="gadgets">
+        <div class="container">
+            <div class="section-heading">
+                <span>Equipment Through the Ages</span>
+                <h2>Mountain Gadgets & Tools</h2>
+                <p>
+                    Explore historical tools, traditional climbing equipment,
+                    modern electronic gadgets and specialist safety devices.
+                    Use the search and category filters to find equipment.
+                </p>
+            </div>
+
+            <div class="filter-panel">
+                <div class="row g-3">
+                    <div class="col-lg-5">
+                        <label for="gadgetSearch">SEARCH GADGETS</label>
+                        <input type="search" id="gadgetSearch" placeholder="Search name, use, history or category...">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label for="gadgetCategory">CATEGORY</label>
+                        <select id="gadgetCategory">
+                            <option value="all">All Gadgets</option>
+                            <option value="Historical">Historical Tools</option>
+                            <option value="Traditional">Traditional Equipment</option>
+                            <option value="Modern">Modern Gadgets</option>
+                            <option value="Safety">Safety Equipment</option>
+                            <option value="Clothing">Clothing & Shelter</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="gadgetSort">SORT BY</label>
+                        <select id="gadgetSort">
+                            <option value="default">Default Order</option>
+                            <option value="az">Name: A to Z</option>
+                            <option value="za">Name: Z to A</option>
+                            <option value="oldest">Oldest Era First</option>
+                            <option value="newest">Modern Era First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-count" id="resultCount" aria-live="polite"></div>
+            <div class="row g-4" id="gadgetsGrid"></div>
+
+            <div class="text-center mt-5" id="noResults" style="display:none">
+                <h4>No gadgets found</h4>
+                <p>Try another search or category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY EQUIPMENT MATTERS -->
+    <section class="section-space dark-section">
+        <div class="container">
+            <div class="section-heading">
+                <span>Prepare Before You Climb</span>
+                <h2>Essential Mountain Equipment</h2>
+                <p>
+                    A gadget is only useful when it suits the route, weather,
+                    conditions and the climber's training.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-compass"></i>
+                        <h3>Navigation</h3>
+                        <p>
+                            Carry a map and compass, and learn how to use them.
+                            GPS devices and offline maps are helpful backups,
+                            but batteries and electronics can fail.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-broadcast-pin"></i>
+                        <h3>Emergency Communication</h3>
+                        <p>
+                            In remote areas, a satellite messenger or personal
+                            locator beacon may provide a way to call for help
+                            where mobile coverage is unavailable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-snow2"></i>
+                        <h3>Snow & Avalanche Safety</h3>
+                        <p>
+                            In avalanche terrain, a beacon, probe and shovel
+                            require training and practice. They do not remove
+                            avalanche risk or replace careful route decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-lightbulb"></i>
+                        <h3>Lighting</h3>
+                        <p>
+                            A headlamp keeps your hands free for climbing.
+                            Carry spare batteries or a charged backup for
+                            unexpected delays and darkness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-thermometer-snow"></i>
+                        <h3>Weather Protection</h3>
+                        <p>
+                            Layered clothing, gloves, suitable boots and a
+                            weatherproof shell help protect against cold,
+                            wind, rain and changing mountain conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="safety-card">
+                        <i class="bi bi-battery-charging"></i>
+                        <h3>Power & Backup</h3>
+                        <p>
+                            Cold reduces battery performance. Keep electronics
+                            protected, take suitable backup power and do not
+                            rely on a single electronic device for safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORICAL EQUIPMENT -->
+    <section class="section-space">
+        <div class="container">
+            <div class="section-heading">
+                <span>How Climbing Equipment Evolved</span>
+                <h2>From Simple Tools to Smart Technology</h2>
+                <p>
+                    The earliest mountain travellers relied on simple tools,
+                    experience and local knowledge. Over time, climbing
+                    equipment became lighter, stronger and more specialised.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gadget-card">
+                        <div class="gadget-image-wrap">
+                            <img class="gadget-image"
+                                src="images pro/Image 4.jpeg"
+                                alt="Woodland and walking terrain" loading="lazy">
+                        </div>
+                        <div class="gadget-card-body">
+                            <h3>Early Mountain Travel</h3>
+                            <p>
+                                Wooden staffs, basic footwear, ropes made from
+                                natural fibres, simple packs and hand-carried
+                                supplies were used in different regions.
+                            </p>
+                            <div class="gadget-use">
+                                <strong>Purpose:</strong>
+                                Balance, support, carrying supplies and travel
+                                over rough ground.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gadget-card">
+                        <div class="gadget-image-wrap">
+                            <img class="gadget-image"
+                                src="images pro/image32.jpg"
+                                alt="Snow-covered mountain peaks" loading="lazy">
+                        </div>
+                        <div class="gadget-card-body">
+                            <h3>Classic Alpine Climbing</h3>
+                            <p>
+                                Alpenstocks, early ice axes, metal crampons,
+                                hemp ropes and heavier wool clothing became
+                                part of mountaineering equipment.
+                            </p>
+                            <div class="gadget-use">
+                                <strong>Purpose:</strong>
+                                Moving over snow and ice, cutting steps,
+                                improving grip and supporting climbing teams.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gadget-card">
+                        <div class="gadget-image-wrap">
+                            <img class="gadget-image"
+                                src="images pro/images (18).jpg"
+                                alt="High mountain range" loading="lazy">
+                        </div>
+                        <div class="gadget-card-body">
+                            <h3>Modern Expeditions</h3>
+                            <p>
+                                Lightweight technical equipment, synthetic
+                                insulation, satellite communication, GPS
+                                navigation and improved safety systems help
+                                climbers prepare for demanding routes.
+                            </p>
+                            <div class="gadget-use">
+                                <strong>Purpose:</strong>
+                                Navigation, communication, protection,
+                                performance and emergency preparedness.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box mt-5">
+                <strong><i class="bi bi-info-circle-fill"></i> Image note:</strong>
+                Product photographs in the gadget cards are loaded from external
+                image URLs. Some historical cards use illustrative outdoor
+                photographs rather than verified photographs of a specific
+                antique object.
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between"> 
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3><i class="fa-solid fa-mountain me-2"></i>Ever Peak</h3>
+                    <p class="mt-2 mb-0">
+                        An educational portal dedicated to mountaineering,
+                        climbing history, records, techniques and mountain safety.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="./index.html">Home</a>
+                    <a href="./Techniques.html">Techniques</a>
+                    <a href="./Record.html">Records</a>
+                    <a href="./Gallery.html">Gallery</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 404 Ever Peak</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (0001) 234-5678</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@EverPeak.com</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons mt-2">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="copyright">
+                        © 2026 Ever Peak. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Gallery.js"></script>
+</body>
+
+</html>

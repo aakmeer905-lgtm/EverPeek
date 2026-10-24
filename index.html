@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ever Peak | Mountaineering Explorer</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+
+            <a class="navbar-brand" href="#home">
+                <img src="logo imag.jpeg" alt="Ever Peak Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+
+                <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="History.html">History</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Type.html">Types</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Techniques.html">Techniques</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Record.html">Records</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Giudeline.html">Guidelines</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQs</a>
+                    </li>
+                </ul>
+                <div class="visitor-box">
+                    <i class="bi bi-people-fill"></i>
+                    Visitors:
+                    <span id="visitorCount">0</span>
+                </div>
+
+                <button class="login-btn" onclick="openLogin()">
+                    <i class="bi bi-person"></i> Sign In
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+  <!-- LOGIN FORM OVERLAY -->
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-form">
+        <button class="login-close" onclick="closeLogin()">
+            &times;
+        </button>
+
+        <div class="login-icon">
+            <i class="bi bi-person-fill"></i>
+        </div>
+
+        <h2>Welcome Back</h2>
+        <p>Sign in to Ever Peak</p>
+
+        <form id="loginFormElement">
+            <div class="input-box">
+                <i class="bi bi-envelope"></i>
+                <input type="email" id="loginEmail" name="email" placeholder="Email Address" autocomplete="email" required>
+            </div>
+
+            <div class="input-box">
+    <i class="bi bi-lock"></i>
+    <input type="password" id="loginPassword" name="password" placeholder="Password" autocomplete="current-password" required>
+    <button type="button" class="password-eye" onclick="togglePassword()">
+        <i class="bi bi-eye" id="passwordEye"></i>
+    </button>
+</div>
+
+            <div class="login-options">
+                <label>
+                    <input type="checkbox" id="rememberMe" name="remember"> Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-submit">
+                Sign In
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- SUCCESS POPUP -->
+<div class="success-popup" id="successPopup">
+    <div class="success-icon">&#10003;</div>
+    <div>
+        <h3>Login Successful!</h3>
+        <p>Welcome to Ever Peak.</p>
+    </div>
+</div>
+
+
+    <!-- =====================================================
+     HERO
+===================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span>Explore Beyond Limits</span>
+
+                <h1>
+                    The World of
+                    <br>
+                    Mountaineering
+                </h1>
+
+                <p>
+                    Discover the history, techniques, adventures,
+                    records, safety guidelines and breathtaking
+                    destinations of the world's greatest mountains.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#about" class="btn-main">
+                        Explore Website
+                        <i class="bi bi-arrow-down"></i>
+                    </a>
+
+                    <a href="./Gallery.html" class="btn-outline">
+                        View Gallery
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     ABOUT / INTRODUCTION
+===================================================== -->
+
+    <section id="about" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Introduction</span>
+
+                <h2>Welcome to Ever Peak</h2>
+
+                <p style="color: rgb(7, 112, 116);">
+                    Your digital guide to the exciting world of
+                    mountaineering and climbing.
+                </p>
+
+            </div>
+
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <img class="intro-image" src="images pro/Image 6.jpeg" alt="Mountain">
+
+                </div>
+
+
+                <div class="col-lg-6 intro-text">
+
+                    <h3>
+                        Adventure Begins Where
+                        Roads End
+                    </h3>
+
+                    <p>
+                        Mountaineering is the sport and activity of
+                        climbing mountains. It combines physical
+                        endurance, technical skills, planning,
+                        courage and respect for nature.
+                    </p>
+
+                    <p>
+                        From beginners exploring their first trail
+                        to experienced climbers attempting the
+                        world's highest peaks, mountaineering offers
+                        unique challenges and unforgettable
+                        experiences.
+                    </p>
+
+
+                    <ul class="info-list">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Learn about mountain climbing.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Understand climbing techniques.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Explore famous mountains.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Learn essential safety guidelines.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =====================================================
+     TYPES
+===================================================== -->
+
+    <section id="types" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Explore</span>
+
+                <h2>Types & Styles</h2>
+
+                <p style="color: rgb(7, 112, 116);">
+                    Mountaineering includes several climbing
+                    disciplines and styles.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-signpost-2"></i>
+                        </div>
+
+                        <h3>Hiking</h3>
+
+                        <p>
+                            Walking through mountain trails and
+                            natural landscapes, generally without
+                            technical climbing equipment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-snow"></i>
+                        </div>
+
+                        <h3>Ice Climbing</h3>
+
+                        <p>
+                            Climbing frozen waterfalls, glaciers
+                            and steep ice formations using
+                            specialized equipment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+
+                            <i class="bi bi-person-arms-up"></i>
+
+                        </div>
+
+                        <h3>Rock Climbing</h3>
+
+                        <p>
+                            Ascending natural rock formations using
+                            climbing techniques, ropes and protective
+                            equipment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-compass"></i>
+                        </div>
+
+                        <h3>Expedition</h3>
+
+                        <p>
+                            Long-duration mountain journeys requiring
+                            planning, camps, equipment and experienced
+                            teams.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     TECHNIQUES
+===================================================== -->
+
+    <section id="techniques" class="dark-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Skills</span>
+
+                <h2>Mountaineering Techniques</h2>
+
+                <p>
+                    Important skills every mountaineer should
+                    understand.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                        <h3>Rope Management</h3>
+
+                        <p>
+                            Proper rope handling and knot techniques
+                            are essential for climbing safety.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-compass"></i>
+                        </div>
+
+                        <h3>Navigation</h3>
+
+                        <p>
+                            Maps, compass, GPS and route planning
+                            help climbers navigate safely.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-cloud-sun"></i>
+                        </div>
+
+                        <h3>Weather Reading</h3>
+
+                        <p>
+                            Understanding changing weather conditions
+                            is critical during mountain expeditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-person-walking"></i>
+                        </div>
+
+                        <h3>Movement</h3>
+
+                        <p>
+                            Correct climbing movement reduces fatigue
+                            and improves balance on difficult terrain.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-backpack"></i>
+                        </div>
+
+                        <h3>Equipment</h3>
+
+                        <p>
+                            Helmets, harnesses, ropes, climbing shoes
+                            and protective equipment support safe
+                            climbing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+
+                        <h3>First Aid</h3>
+
+                        <p>
+                            Basic first-aid and emergency response
+                            knowledge is essential during expeditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     SHELTERING
+===================================================== -->
+
+    <section id="sheltering" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Survival</span>
+
+                <h2>Mountain Sheltering</h2>
+
+                <p>
+                    Protection from extreme mountain weather is
+                    essential during an expedition.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-house"></i>
+                        </div>
+
+                        <h3>Mountain Huts</h3>
+
+                        <p>
+                            Permanent or seasonal shelters can
+                            provide protection, sleeping areas and
+                            basic facilities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+
+                            <i class="bi bi-backpack"></i>
+
+                        </div>
+
+                        <h3>Expedition Tents</h3>
+
+                        <p>
+                            Strong four-season tents are designed
+                            to withstand wind, snow and cold
+                            temperatures.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-snow2"></i>
+                        </div>
+
+                        <h3>Snow Shelters</h3>
+
+                        <p>
+                            In extreme situations, snow shelters
+                            can provide temporary protection from
+                            harsh weather.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     HAZARDS
+===================================================== -->
+
+    <section id="hazards" class="dark-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Safety</span>
+
+                <h2>Mountain Hazards</h2>
+
+                <p>
+                    Understanding risks is one of the most important
+                    parts of responsible mountaineering.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-snow2"></i>
+                        </div>
+
+                        <h3>Avalanches</h3>
+
+                        <p>
+                            Rapid movement of snow and ice can create
+                            serious danger on steep slopes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-cloud-lightning"></i>
+                        </div>
+
+                        <h3>Weather</h3>
+
+                        <p>
+                            Storms, heavy snowfall, strong winds and
+                            sudden temperature changes can be dangerous.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-thermometer-snow"></i>
+                        </div>
+
+                        <h3>Cold Injuries</h3>
+
+                        <p>
+                            Frostbite and hypothermia can occur when
+                            the body is exposed to extreme cold.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="info-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-exclamation-triangle"></i>
+                        </div>
+
+                        <h3>Falls</h3>
+
+                        <p>
+                            Slippery surfaces and difficult terrain
+                            can lead to serious climbing accidents.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     RECORDS
+===================================================== -->
+    <section id="records" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Achievements</span>
+
+                <h2>Mountaineering Records</h2>
+
+                <p style="color: rgb(7, 112, 116);">
+                    Some notable achievements from the history
+                    of mountain exploration.
+                </p>
+
+            </div>
+
+
+            <div class="table-responsive record-table">
+
+                <table class="table mb-0">
+
+                    <thead>
+
+                        <tr>
+                            <th>Achievement</th>
+                            <th>Mountain</th>
+                            <th>Climber / Team</th>
+                            <th>Year</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>First successful ascent</td>
+                            <td>Mount Everest</td>
+                            <td>Edmund Hillary & Tenzing Norgay</td>
+                            <td>1953</td>
+                        </tr>
+
+                        <tr>
+                            <td>First woman to summit Everest</td>
+                            <td>Mount Everest</td>
+                            <td>Junko Tabei</td>
+                            <td>1975</td>
+                        </tr>
+
+                        <tr>
+                            <td>First winter ascent</td>
+                            <td>K2</td>
+                            <td>Nepalese Team</td>
+                            <td>2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Highest mountain in the world</td>
+                            <td>Mount Everest</td>
+                            <td>Himalayas</td>
+                            <td>8848.86 m</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =====================================================
+     ORGANIZATIONS / LOCATIONS
+===================================================== -->
+
+    <section id="organizations" class="dark-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+                <span>Community</span>
+                <h2>Mountaineering Organizations</h2>
+                <p>
+                    Organizations and clubs help climbers learn,
+                    train and organize expeditions.
+                </p>
+            </div>
+
+            <div class="row g-4 mb-5">
+
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="card-img-wrapper">
+                            <img src="images pro/Image 9.jpeg" alt="Pakistan Mountains" class="card-img">
+
+                        </div>
+                        <div class="card-content">
+                            <i class="bi bi-geo-alt-fill location-icon"></i>
+                            <h3 class="mt-3">Pakistan</h3>
+                            <p>
+                                Karakoram and Himalayan regions offer
+                                world-class climbing destinations.
+                            </p>
+                            <strong>Northern Areas</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="card-img-wrapper">
+                            <img src="images pro/luc2.jpg" alt="Nepal Himalayas" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <i class="bi bi-geo-alt-fill location-icon"></i>
+                            <h3 class="mt-3">Nepal</h3>
+                            <p>
+                                Nepal is famous for Himalayan expeditions
+                                and Mount Everest.
+                            </p>
+                            <strong>Himalayas</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="card-img-wrapper">
+                            <img src="images pro/luc3.jpg" alt="Swiss Alps" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <i class="bi bi-geo-alt-fill location-icon"></i>
+                            <h3 class="mt-3">Switzerland</h3>
+                            <p>
+                                The Alps provide numerous climbing,
+                                hiking and mountaineering opportunities.
+                            </p>
+                            <strong>Swiss Alps</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="map-box">
+
+                <iframe id="map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=66.5%2C35.0%2C75.5%2C37.5&layer=mapnik"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+            <p class="text-center mt-3">
+                <small>
+                    Map showing a mountain region.
+                </small>
+            </p>
+
+        </div>
+
+    </section>
+    <!-- =====================================================
+     SUCCESS STORIES
+===================================================== -->
+
+    <section id="stories" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Inspiration</span>
+
+                <h2>Success Stories</h2>
+
+                <p style="color: rgb(7, 112, 116);">
+                    Stories of determination, teamwork and adventure.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="story-card">
+
+                        <img src="images pro/image 10.jpeg" alt="Journey to the Summit">
+
+                        <div class="story-content">
+
+                            <h3>
+                                Journey to the Summit
+                            </h3>
+
+                            <p>
+                                A successful expedition demonstrates
+                                how preparation, teamwork and patience
+                                can overcome difficult conditions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="story-card">
+
+                        <img src="images pro/Image 8.jpeg" alt="Climbing">
+
+                        <div class="story-content">
+
+                            <h3>
+                                Beyond Fear
+                            </h3>
+
+                            <p>
+                                Climbers often discover their own
+                                strength while dealing with difficult
+                                terrain and changing weather.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="story-card">
+
+                        <img src="images pro/Image 9.jpeg" alt="Mountain">
+
+                        <div class="story-content">
+
+                            <h3>
+                                Teamwork at Altitude
+                            </h3>
+
+                            <p>
+                                Successful expeditions depend on
+                                communication, trust and cooperation
+                                between team members.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     GALLERY
+===================================================== -->
+
+    <section id="gallery" class="dark-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Visual Journey</span>
+
+                <h2>Mountain Gallery</h2>
+
+                <p>
+                    Explore the beauty and challenge of mountain
+                    environments.
+                </p>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="images pro/Mount Fuji Reflected at Sunrise.png" alt="Mountain">
+
+                        <div class="gallery-overlay">
+                            <h4>Mount fuji</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="images pro/Image 3jpeg.jpeg" alt="Snow mountain">
+
+                        <div class="gallery-overlay">
+                            <h4>Snow Mountains</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="background imag2 - Copy.jpeg" alt="Climber">
+
+                        <div class="gallery-overlay">
+                            <h4>Mountain Climbing</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="images pro/Image 4.jpeg" alt="Climber">
+
+                        <div class="gallery-overlay">
+                            <h4>Adventure</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="images pro/Image5.jpeg" alt="Mountain night">
+
+                        <div class="gallery-overlay">
+                            <h4>Mountain Night</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="gallery-item">
+
+                        <img src="background imag.jpeg" alt="Mountain landscape">
+
+                        <div class="gallery-overlay">
+                            <h4>Mountain Landscape</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- =====================================================
+      LATEST DEVELOPMENTS
+===================================================== -->
+
+    <section id="latest" class="dark-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Innovation</span>
+
+                <h2>Latest Developments</h2>
+
+                <p>
+                    Technology continues to improve mountain safety
+                    and expedition planning.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="development">
+
+                        <i class="bi bi-broadcast-pin"></i>
+
+                        <h3 class="mt-3">
+                            Satellite Communication
+                        </h3>
+
+                        <p>
+                            Satellite communication devices allow
+                            climbers to maintain contact in remote
+                            mountain areas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="development">
+
+                        <svg class="minimal-gold-icon" viewBox="0 0 24 24" fill="none" stroke="#e3a024"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Device Body -->
+                            <rect x="7" y="3" width="10" height="18" rx="2" ry="2"></rect>
+                            <!-- Screen representation -->
+                            <rect x="9" y="5" width="6" height="6"></rect>
+                            <!-- Basic button markers -->
+                            <circle cx="9" cy="13" r="1"></circle>
+                            <circle cx="12" cy="13" r="1"></circle>
+                            <circle cx="15" cy="13" r="1"></circle>
+                            <circle cx="9" cy="16" r="1"></circle>
+                            <circle cx="12" cy="16" r="1"></circle>
+                            <circle cx="15" cy="16" r="1"></circle>
+                            <!-- Antenna marker -->
+                            <path d="M17 3v4"></path>
+                        </svg>
+
+                        <h3 class="mt-3">
+                            GPS Navigation
+                        </h3>
+
+                        <p>
+                            Modern GPS technology supports accurate
+                            route planning and navigation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="development">
+
+                        <i class="bi bi-cloud-sun"></i>
+
+                        <h3 class="mt-3">
+                            Weather Technology
+                        </h3>
+
+                        <p>
+                            Better weather forecasting helps teams
+                            make safer decisions before and during
+                            expeditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+   
+    <!-- =====================================================
+     GUIDELINES
+===================================================== -->
+
+    <section id="guidelines" class="fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Stay Safe</span>
+
+                <h2>General Guidelines</h2>
+
+                <p style="color: rgb(7, 112, 116);">
+                    Important principles for responsible
+                    mountaineering.
+                </p>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">01</div>
+
+                        <div>
+
+                            <h3>Plan Your Route</h3>
+
+                            <p>
+                                Research the route, terrain, weather
+                                and difficulty level before starting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">02</div>
+
+                        <div>
+
+                            <h3>Check Weather</h3>
+
+                            <p>
+                                Never ignore mountain weather
+                                forecasts and warnings.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">03</div>
+
+                        <div>
+
+                            <h3>Carry Proper Equipment</h3>
+
+                            <p>
+                                Always carry appropriate clothing,
+                                navigation tools, food and emergency
+                                equipment.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">04</div>
+
+                        <div>
+
+                            <h3>Never Climb Alone</h3>
+
+                            <p>
+                                Whenever possible, climb with an
+                                experienced partner or organized team.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">05</div>
+
+                        <div>
+
+                            <h3>Respect Nature</h3>
+
+                            <p>
+                                Follow Leave No Trace principles and
+                                protect mountain ecosystems.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="guide-item">
+
+                        <div class="guide-number">06</div>
+
+                        <div>
+
+                            <h3>Know Your Limits</h3>
+
+                            <p>
+                                Turn back when conditions become
+                                unsafe. Reaching the summit is never
+                                more important than returning safely.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     CONTACT
+===================================================== -->
+
+    <section id="contact" class="contact-section fade-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Connect</span>
+
+                <h2 style="color:white;">Contact Ever Peak</h2>
+
+                <p style="color:white;">
+                    Learn, explore and prepare for your next
+                    mountain adventure.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-box text-center">
+
+                        <i class="bi bi-envelope"></i>
+
+                        <h3 class="mt-3">
+                            Email
+                        </h3>
+
+                        <p>
+                            info@everpeak.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-box text-center">
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        <h3 class="mt-3">
+                            Location
+                        </h3>
+
+                        <p>
+                            Mountain Adventure Center
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-box text-center">
+
+                        <i class="bi bi-globe"></i>
+
+                        <h3 class="mt-3">
+                            Website
+                        </h3>
+
+                        <p>
+                            www.everpeak.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+    <footer>
+    <div class="container">
+        <div class="row g-4 justify-content-between"> 
+            
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6 footer-col">
+                <h3><i class="fa-solid fa-mountain me-2"></i>Ever Peak</h3>
+                <p class="mt-2 mb-0">
+                    An educational portal dedicated to mountaineering,
+                    climbing history, records, techniques and mountain safety.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 footer-col">
+                <h5>Quick Links</h5>
+                <a href="./index.html">Home</a>
+                <a href="./About.html">About</a>
+                <a href="./History.html">History</a>
+                <a href="./Record.html">Records</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6 footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 404 Ever Peak</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (0001) 234-5678</p>
+                <p><i class="fa-solid fa-envelope"></i> info@EverPeak.com</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-lg-3 col-md-6 footer-col">
+                <h5>Follow Us</h5>
+                <div class="social-icons mt-2">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="col-12">
+                <div class="copyright">
+                    © 2026 Ever Peak. All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    <!-- =====================================================
+     DATE / TIME TICKER (Geolocation removed)
+===================================================== -->
+
+    <div class="ticker">
+
+        <div class="ticker-label">
+            LIVE
+        </div>
+
+        <div class="ticker-content">
+
+            <i class="bi bi-clock"></i>
+
+            Date:
+            <span id="currentDate"></span>
+
+            &nbsp;&nbsp; | &nbsp;&nbsp;
+
+            Time:
+            <span id="currentTime"></span>
+
+            &nbsp;&nbsp; | &nbsp;&nbsp;
+
+            Ever Peak — Explore Beyond Limits
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+    <button id="backTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,851 @@
+ * {
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+ }
+
+ body {
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+     background: #f5f7f5;
+     color: #18362e;
+ }
+
+ /* =========================
+           NAVBAR - SAME AS EVER PEAK
+        ========================= */
+
+ .navbar {
+     background: #123d32 !important;
+     padding: 12px 0;
+     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+ }
+
+ .ever-peak-logo {
+     width: 100px;
+     height: 100px;
+     object-fit: contain;
+     display: block;
+     margin: -8px 0 -8px 0;
+ }
+
+ .navbar-nav {
+     align-items: center;
+ }
+
+ .nav-link {
+     color: white !important;
+     font-size: 13px;
+     font-weight: 600;
+     margin: 0 3px;
+     padding: 12px 11px !important;
+     border-radius: 5px;
+     transition: .3s;
+ }
+
+ .nav-link:hover,
+ .nav-link.active {
+     background: #e0a52b !important;
+     color: #123d32 !important;
+ }
+
+ .visitor-box {
+     color: white;
+     font-size: 12px;
+     margin-left: 15px;
+     padding: 7px 12px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 20px;
+ }
+
+ .visitor-box i {
+     color: #e0a52b;
+ }
+
+ .login-btn {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     margin-left: 10px;
+     padding: 9px 18px;
+     border: none;
+     border-radius: 25px;
+     background: #e0a52b;
+     color: #123d32;
+     font-weight: 700;
+     cursor: pointer;
+     transition: .3s;
+ }
+
+ .login-btn:hover {
+     background: white;
+     transform: translateY(-2px);
+ }
+
+ @media (max-width:991px) {
+
+     .navbar-collapse {
+         background: #08251f;
+         padding: 15px;
+         border-radius: 8px;
+         margin-top: 10px;
+     }
+
+     .visitor-box {
+         margin-left: 8px;
+         font-size: 14px;
+         padding: 9px 14px;
+     }
+
+     .navbar-collapse .login-btn {
+         margin-left: 8px;
+     }
+
+     .login-btn {
+         margin-left: 8px;
+     }
+ }
+
+ @media (max-width:575px) {
+
+     .ever-peak-logo {
+         width: 100px;
+         height: 100px;
+     }
+ }
+
+ /* =========================
+           HERO
+        ========================= */
+
+ .hero {
+     min-height: 580px;
+     background:
+         linear-gradient(rgba(5, 32, 25, .70), rgba(5, 32, 25, .78)),
+         url("background\ imag.jpeg");
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     color: white;
+     position: relative;
+ }
+
+ .hero-content {
+     max-width: 900px;
+     padding: 70px 20px;
+ }
+
+ .hero-small {
+     color: #e0a52b;
+     font-weight: 800;
+     letter-spacing: 4px;
+     font-size: 14px;
+     text-transform: uppercase;
+     margin-bottom: 18px;
+ }
+
+ .hero h1 {
+     font-family: 'Playfair Display', serif;
+     font-size: clamp(45px, 7vw, 82px);
+     line-height: 1.05;
+     margin-bottom: 22px;
+ }
+
+ .hero h1 span {
+     color: #e0a52b;
+ }
+
+ .hero p {
+     max-width: 760px;
+     font-size: 17px;
+     line-height: 1.9;
+     color: #eef5f1;
+ }
+
+ .hero-buttons {
+     margin-top: 30px;
+ }
+
+ .gold-btn {
+     background: #e0a52b;
+     color: #123d32;
+     padding: 13px 25px;
+     border-radius: 30px;
+     font-weight: 800;
+     text-decoration: none;
+     display: inline-block;
+     margin-right: 10px;
+     transition: .3s;
+ }
+
+ .gold-btn:hover {
+     background: white;
+     color: #123d32;
+     transform: translateY(-3px);
+ }
+
+ .outline-btn {
+     border: 1px solid white;
+     color: white;
+     padding: 12px 25px;
+     border-radius: 30px;
+     font-weight: 700;
+     text-decoration: none;
+     display: inline-block;
+     transition: .3s;
+ }
+
+ .outline-btn:hover {
+     background: white;
+     color: #123d32;
+ }
+
+ /* =========================
+           GENERAL
+        ========================= */
+
+ section {
+     padding: 90px 0;
+ }
+
+ .section-title {
+     text-align: center;
+     margin-bottom: 55px;
+ }
+
+ .section-title small {
+     color: #d19620;
+     font-weight: 800;
+     letter-spacing: 3px;
+     text-transform: uppercase;
+ }
+
+ .section-title h2 {
+     font-family: 'Playfair Display', serif;
+     font-size: 44px;
+     color: #123d32;
+     margin: 10px 0 15px;
+ }
+
+ .section-title p {
+     max-width: 750px;
+     margin: auto;
+     color: #66756f;
+     line-height: 1.8;
+ }
+
+ /* =========================
+           INTRO
+        ========================= */
+
+ .intro {
+     background: white;
+ }
+
+ .intro-img {
+     width: 100%;
+     height: 430px;
+     object-fit: cover;
+     border-radius: 20px;
+     box-shadow: 0 15px 40px rgba(18, 61, 50, .15);
+ }
+
+ .intro-content {
+     padding: 15px 10px 15px 35px;
+ }
+
+ .intro-content h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 37px;
+     color: #123d32;
+     margin-bottom: 20px;
+ }
+
+ .intro-content p {
+     line-height: 1.9;
+     color: #60716a;
+ }
+
+ .check-list {
+     list-style: none;
+     padding: 0;
+     margin-top: 25px;
+ }
+
+ .check-list li {
+     margin-bottom: 13px;
+     font-weight: 600;
+ }
+
+ .check-list i {
+     color: #d99b22;
+     margin-right: 8px;
+ }
+
+ /* =========================
+           TECHNIQUE CARDS
+        ========================= */
+
+ .techniques {
+     background: #eef3f0;
+ }
+
+ .tech-card {
+     background: white;
+     border-radius: 18px;
+     overflow: hidden;
+     height: 100%;
+     box-shadow: 0 8px 25px rgba(18, 61, 50, .08);
+     transition: .35s;
+ }
+
+ .tech-card:hover {
+     transform: translateY(-9px);
+     box-shadow: 0 18px 35px rgba(18, 61, 50, .15);
+ }
+
+ .tech-card img {
+     width: 100%;
+     height: 230px;
+     object-fit: cover;
+ }
+
+ .tech-card-body {
+     padding: 25px;
+ }
+
+ .tech-icon {
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     background: #e9f0ed;
+     color: #123d32;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 22px;
+     margin-bottom: 15px;
+ }
+
+ .tech-card h4 {
+     font-family: 'Playfair Display', serif;
+     font-size: 25px;
+     color: #123d32;
+ }
+
+ .tech-card p {
+     color: #66756f;
+     line-height: 1.7;
+     font-size: 14px;
+ }
+
+ /* =========================
+           ROCK / ICE TECHNIQUES
+        ========================= */
+
+ .dark-section {
+     background: #123d32;
+     color: white;
+ }
+
+ .dark-section .section-title h2 {
+     color: white;
+ }
+
+ .dark-section .section-title p {
+     color: #cbd8d3;
+ }
+
+ .skill-box {
+     padding: 30px;
+     border: 1px solid rgba(255, 255, 255, .14);
+     background: rgba(255, 255, 255, .05);
+     border-radius: 17px;
+     height: 100%;
+     transition: .3s;
+ }
+
+ .skill-box:hover {
+     background: rgba(255, 255, 255, .09);
+     transform: translateY(-5px);
+ }
+
+ .skill-box i {
+     font-size: 35px;
+     color: #e0a52b;
+     margin-bottom: 18px;
+ }
+
+ .skill-box h4 {
+     font-size: 21px;
+     margin-bottom: 12px;
+ }
+
+ .skill-box p {
+     color: #c7d4cf;
+     line-height: 1.7;
+     font-size: 14px;
+ }
+
+ /* =========================
+           ROPE TECHNIQUES
+        ========================= */
+
+ .rope-section {
+     background: white;
+ }
+
+ .rope-img {
+     width: 100%;
+     height: 470px;
+     object-fit: cover;
+     border-radius: 20px;
+ }
+
+ .rope-list {
+     margin-top: 25px;
+ }
+
+ .rope-item {
+     display: flex;
+     gap: 18px;
+     padding: 17px;
+     border-bottom: 1px solid #e4e9e6;
+ }
+
+ .rope-number {
+     width: 38px;
+     height: 38px;
+     min-width: 38px;
+     border-radius: 50%;
+     background: #123d32;
+     color: #e0a52b;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 800;
+ }
+
+ .rope-item h5 {
+     margin: 0 0 5px;
+     color: #123d32;
+     font-weight: 800;
+ }
+
+ .rope-item p {
+     margin: 0;
+     color: #687770;
+     font-size: 14px;
+     line-height: 1.6;
+ }
+
+ /* =========================
+           EQUIPMENT
+        ========================= */
+
+ .equipment {
+     background: #f0f4f1;
+ }
+
+ .equipment-card {
+     background: white;
+     border-radius: 18px;
+     overflow: hidden;
+     height: 100%;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, .07);
+     transition: .35s;
+ }
+
+ .equipment-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 17px 35px rgba(0, 0, 0, .13);
+ }
+
+ .equipment-card img {
+     width: 100%;
+     height: 220px;
+     object-fit: cover;
+ }
+
+ .equipment-body {
+     padding: 22px;
+ }
+
+ .equipment-body h4 {
+     color: #123d32;
+     font-family: 'Playfair Display', serif;
+     font-size: 24px;
+     margin-bottom: 10px;
+ }
+
+ .equipment-body p {
+     color: #687770;
+     font-size: 14px;
+     line-height: 1.7;
+ }
+
+ .equipment-tag {
+     display: inline-block;
+     padding: 5px 12px;
+     border-radius: 20px;
+     background: #e7eee9;
+     color: #123d32;
+     font-size: 11px;
+     font-weight: 800;
+     margin-top: 8px;
+ }
+
+ /* =========================
+           GEAR TABLE
+        ========================= */
+
+ .gear-table-section {
+     background: white;
+ }
+
+ .gear-table {
+     background: white;
+     border-radius: 18px;
+     overflow: hidden;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+ }
+
+ .gear-table table {
+     margin: 0;
+ }
+
+ .gear-table thead {
+     background: #123d32;
+     color: white;
+ }
+
+ .gear-table th,
+ .gear-table td {
+     padding: 17px;
+     vertical-align: middle;
+ }
+
+ .gear-table tbody tr:hover {
+     background: #f4f7f5;
+ }
+
+ /* =========================
+           ALTITUDE
+        ========================= */
+
+ .altitude {
+     background:
+         linear-gradient(90deg, rgba(4, 28, 23, .94), rgba(4, 28, 23, .55)),
+         url("background\ imag.jpeg") center/cover;
+     color: white;
+     background-size: cover;
+     background-position: center;
+     color: white;
+ }
+
+ .altitude-box {
+     border: 1px solid rgba(255, 255, 255, .2);
+     padding: 28px;
+     border-radius: 15px;
+     background: rgba(255, 255, 255, .05);
+     height: 100%;
+ }
+
+ .altitude-box h4 {
+     color: #e0a52b;
+     font-size: 21px;
+ }
+
+ .altitude-box p {
+     color: #d3ded9;
+     line-height: 1.7;
+     font-size: 14px;
+ }
+
+ /* =========================
+           SAFETY
+        ========================= */
+
+ .safety {
+     background: white;
+ }
+
+ .safety-card {
+     padding: 28px;
+     border-left: 4px solid #e0a52b;
+     background: #f5f8f6;
+     border-radius: 0 12px 12px 0;
+     margin-bottom: 18px;
+ }
+
+ .safety-card h4 {
+     color: #123d32;
+     font-size: 19px;
+ }
+
+ .safety-card p {
+     margin: 0;
+     color: #66756f;
+     line-height: 1.7;
+     font-size: 14px;
+ }
+
+ /* =========================
+           LEVELS
+        ========================= */
+
+ .levels {
+     background: #eef3f0;
+ }
+
+ .level-card {
+     background: white;
+     padding: 32px;
+     border-radius: 18px;
+     text-align: center;
+     height: 100%;
+     box-shadow: 0 7px 22px rgba(0, 0, 0, .06);
+ }
+
+ .level-card .level-icon {
+     width: 65px;
+     height: 65px;
+     background: #123d32;
+     color: #e0a52b;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: auto auto 18px;
+     font-size: 28px;
+ }
+
+ .level-card h4 {
+     color: #123d32;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .level-card p {
+     color: #687770;
+     font-size: 14px;
+     line-height: 1.7;
+ }
+
+ /* =========================
+           FINAL CTA
+        ========================= */
+
+ .cta {
+     background: #123d32;
+     text-align: center;
+     color: white;
+ }
+
+ .cta h2 {
+     font-family: 'Playfair Display', serif;
+     font-size: 45px;
+ }
+
+ .cta p {
+     color: #ccd8d3;
+     max-width: 700px;
+     margin: 15px auto 30px;
+     line-height: 1.8;
+ }
+
+ /* =========================
+           FOOTER
+        ========================= */
+ footer {
+     background: #061c17;
+     color: #b5c5c1;
+     padding: 30px 0 15px;
+ }
+
+ footer h3,
+ footer h4,
+ footer h5 {
+     color: #ffffff;
+     margin-bottom: 15px;
+ }
+
+ /* Ever Peak Icon Color */
+ footer h3 i {
+     color: #e0a52b;
+ }
+
+ footer a {
+     color: #b5c5c1;
+     display: block;
+     margin: 5px 0;
+     transition: all 0.3s ease;
+     text-decoration: none;
+ }
+
+ footer a:hover {
+     color: #e0a52b;
+     padding-left: 5px;
+ }
+
+ /* Footer Columns Alignment */
+ .footer-col {
+     color: #b5c5c1;
+ }
+
+ .footer-col h4,
+ .footer-col h5 {
+     font-size: 1.25rem;
+     font-weight: 600;
+ }
+
+ .footer-col p {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 10px;
+     font-size: 0.95rem;
+     line-height: 1.4;
+ }
+
+ /* Contact Info Icons */
+ .footer-col p i {
+     color: #e0a52b;
+     width: 20px;
+     text-align: center;
+     font-size: 1rem;
+     flex-shrink: 0;
+ }
+
+ /* Social Media Icons */
+ .social-icons {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .social-icons a {
+     background: rgba(255, 255, 255, 0.1);
+     color: whitesmoke;
+     width: 36px;
+     height: 36px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     margin: 0;
+     transition: background 0.3s ease, color 0.3s ease;
+ }
+
+ .social-icons a:hover {
+     background: #e0a52b;
+     color: #061c17;
+     padding-left: 0;
+ }
+
+ /* Copyright Section */
+ .copyright {
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+     margin-top: 25px;
+     padding-top: 15px;
+     text-align: center;
+     font-size: 0.9rem;
+ }
+
+ /* =========================
+           BACK TO TOP
+        ========================= */
+#backTop {
+      position: fixed;
+      right: 20px;
+      bottom: 55px;
+      width: 45px;
+      height: 45px;
+      border: 0;
+      border-radius: 50%;
+      background: #e0a52b;
+      color: #123d32;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9998;
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+ /* =========================
+           RESPONSIVE
+        ========================= */
+
+ @media(max-width:768px) {
+
+     section {
+         padding: 65px 0;
+     }
+
+     .section-title h2 {
+         font-size: 34px;
+     }
+
+     .intro-content {
+         padding: 30px 5px 0;
+     }
+
+     .intro-img {
+         height: 300px;
+     }
+
+     .rope-img {
+         height: 300px;
+         margin-bottom: 30px;
+     }
+
+     .hero {
+         min-height: 520px;
+     }
+
+     .hero h1 {
+         font-size: 48px;
+     }
+
+     .cta h2 {
+         font-size: 34px;
+     }
+ }
+
+ /* logo */
+ .logo-img {
+     width: 90px;
+     height: 90px;
+     max-width: 100%;
+     object-fit: cover;
+     display: block;
+     border-radius: 50%;
+
+     /* Glow */
+     border: 1px solid black;
+     ;
+     box-shadow:
+         0 0 5px rgb(233, 227, 227);
+
+     transition: all 0.3s ease;
+ }
+
+ /* Hover Effect */
+ .logo-img:hover {
+     box-shadow:
+         0 0 8px rgb(248, 244, 244),
+     ;
+
+     transform: scale(1.05);
+ }
+
+ /* Mobile Responsive */
+ @media (max-width: 576px) {
+     .logo-img {
+         width: 60px;
+         height: 60px;
+     }
+ }

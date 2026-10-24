@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever Peak | Mountaineering Records</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Record.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo imag.jpeg" alt="Ever Peak Logo" class="logo-img">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./History.html">History</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Type.html">Types</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Techniques.html">Techniques</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Record.html">Records</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Giudeline.html">Guidelines</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQs</a>
+                    </li>
+                </ul>
+
+                <div class="visitor-box">
+
+                    <i class="bi bi-people-fill"></i>
+
+                    Visitors:
+
+                    <span id="visitorCount">0</span>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <header class="records-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label">Ever Peak Records Collection</span>
+
+                <h1>
+                    The World's Greatest
+                    <span>Mountaineering Records</span>
+                </h1>
+
+                <p>
+                    Explore remarkable achievements in mountain climbing:
+                    historic first ascents, extreme-altitude milestones,
+                    speed records, winter expeditions and extraordinary
+                    accomplishments by climbers around the world.
+                </p>
+
+                <a href="#records" class="hero-btn">
+                    Explore Records
+                    <i class="bi bi-arrow-down-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <div class="container stats-section">
+        <div class="row g-3">
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-trophy-fill"></i>
+                    <h3 id="totalRecords">0</h3>
+                    <p>DOCUMENTED RECORDS</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3 id="totalClimbers">0</h3>
+                    <p>CLIMBERS / SUBJECTS</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h3 id="totalMountains">0</h3>
+                    <p>MOUNTAINS / ROUTES</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-card">
+                    <i class="bi bi-calendar-event"></i>
+                    <h3>1950–2026</h3>
+                    <p>RECORD HISTORY COVERAGE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RECORDS -->
+    <section class="records-section" id="records">
+        <div class="container">
+            <div class="section-heading">
+                <span>Achievements Beyond Limits</span>
+                <h2>Mountaineering World Records</h2>
+                <p>
+                    Search and explore notable documented achievements from
+                    different mountains, eras and climbing disciplines.
+                </p>
+            </div>
+
+            <div class="filter-panel">
+                <div class="row g-3">
+                    <div class="col-lg-5">
+                        <label for="recordSearch">SEARCH RECORDS</label>
+                        <input type="search" id="recordSearch"
+                            placeholder="Search climber, mountain, year or achievement...">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label for="recordCategory">RECORD CATEGORY</label>
+                        <select id="recordCategory">
+                            <option value="all">All Categories</option>
+                            <option value="First Ascent">First Ascents</option>
+                            <option value="Speed">Speed Records</option>
+                            <option value="High Altitude">High Altitude</option>
+                            <option value="Eight-Thousanders">Eight-Thousanders</option>
+                            <option value="Winter Climbing">Winter Climbing</option>
+                            <option value="Age Records">Age Records</option>
+                            <option value="Oxygen Records">Oxygen Records</option>
+                            <option value="Other">Other Achievements</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label for="recordSort">SORT RECORDS</label>
+                        <select id="recordSort">
+                            <option value="newest">Year: Newest First</option>
+                            <option value="oldest">Year: Oldest First</option>
+                            <option value="az">Climber: A to Z</option>
+                            <option value="za">Climber: Z to A</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-count" id="resultCount" aria-live="polite"></div>
+            <div class="row g-4" id="recordsGrid"></div>
+
+            <div class="text-center mt-4" id="noResults" style="display:none">
+                <h4>No records found</h4>
+                <p>Try another search term or category.</p>
+            </div>
+
+            <div class="note-box mt-5">
+                <strong>
+                    <i class="bi bi-info-circle-fill"></i>
+                    Important record note:
+                </strong>
+                This page is a curated collection of notable documented
+                mountaineering records, not an exhaustive database of every
+                climbing achievement ever made. Records may use different
+                rules for summit verification, routes, oxygen use, timing and
+                team categories. Follow the linked reference for the exact
+                criteria and current status of each record.
+            </div>
+        </div>
+    </section>
+
+    <!-- RECORD CATEGORIES -->
+    <section class="records-section dark-section">
+        <div class="container">
+            <div class="section-heading">
+                <span>Different Ways to Make History</span>
+                <h2>Record Categories</h2>
+                <p>
+                    Mountaineering records measure many different skills.
+                    Each category has its own rules and challenges.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-flag-fill"></i>
+                        <h3>First Ascents</h3>
+                        <p>
+                            Achievements marking the first documented successful
+                            ascent of a mountain or a particular route.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-stopwatch-fill"></i>
+                        <h3>Speed Records</h3>
+                        <p>
+                            Timed ascents and traverses, where route,
+                            starting point, support and timing rules matter.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-wind"></i>
+                        <h3>Without Supplemental Oxygen</h3>
+                        <p>
+                            High-altitude achievements completed without
+                            supplemental oxygen, under the stated record rules.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-snow"></i>
+                        <h3>Winter Ascents</h3>
+                        <p>
+                            Climbs undertaken during the defined winter season,
+                            often involving extreme cold and difficult weather.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-triangle-half"></i>
+                        <h3>Eight-Thousanders</h3>
+                        <p>
+                            Records involving the world's fourteen mountains
+                            whose summits rise above 8,000 metres.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="fact-card">
+                        <i class="bi bi-award-fill"></i>
+                        <h3>Age and Personal Milestones</h3>
+                        <p>
+                            Documented youngest, oldest and other personal
+                            milestones with clear age and verification criteria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOUNTAIN FACTS -->
+    <section class="records-section">
+        <div class="container">
+            <div class="section-heading">
+                <span>Know the Mountains</span>
+                <h2>Mountain Facts Behind the Records</h2>
+                <p>
+                    Understanding the mountain and the record category helps
+                    put each achievement into context.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="record-card">
+                        <div class="record-card-top">
+                            <span class="record-tag">Highest Above Sea Level</span>
+                            <h3>Mount Everest</h3>
+                        </div>
+                        <div class="record-card-body">
+                            <div class="record-meta">
+                                <i class="bi bi-rulers"></i>
+                                <div>
+                                    <small>HEIGHT</small>
+                                    <strong>8,848.86 metres</strong>
+                                </div>
+                            </div>
+                            <p class="record-description">
+                                Mount Everest, in the Himalayas on the Nepal–China
+                                border, is the highest mountain above sea level.
+                            </p>
+                            <a class="record-source"
+                                href="https://www.guinnessworldrecords.com/world-records/highest-mountain"
+                                target="_blank" rel="noopener noreferrer">
+                                View reference <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="record-card">
+                        <div class="record-card-top">
+                            <span class="record-tag">Base-to-Summit Distinction</span>
+                            <h3>Mauna Kea</h3>
+                        </div>
+                        <div class="record-card-body">
+                            <div class="record-meta">
+                                <i class="bi bi-rulers"></i>
+                                <div>
+                                    <small>MEASUREMENT</small>
+                                    <strong>About 10,205 metres from seabed</strong>
+                                </div>
+                            </div>
+                            <p class="record-description">
+                                Mauna Kea in Hawaii is often described as taller
+                                when measured from its underwater base to its
+                                summit. This is a different measurement from
+                                height above sea level.
+                            </p>
+                            <a class="record-source" href="https://www.guinnessworldrecords.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                Explore reference <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3><i class="fa-solid fa-mountain me-2"></i>Ever Peak</h3>
+                    <p class="mt-2 mb-0">
+                        An educational portal dedicated to mountaineering,
+                        climbing history, records, techniques and mountain safety.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="./index.html">Home</a>
+                    <a href="./Techniques.html">Techniques</a>
+                    <a href="./Record.html">Records</a>
+                    <a href="./Gallery.html">Gallery</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 404 Ever Peak</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (0001) 234-5678</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@EverPeak.com</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons mt-2">
+                        <a href="https:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https:www.facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https:www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="col-12">
+                    <div class="copyright">
+                        © 2026 Ever Peak. All Rights Reserved.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================
+     BACK TO TOP 
+========================================================= -->
+
+    <button id="backTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Record.js"></script>
+</body>
+
+</html>
